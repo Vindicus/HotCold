@@ -1,0 +1,199 @@
+html,body,h1{
+	margin:0;
+	padding:0;
+	font-size:16px;
+}
+html{
+	background:#F4FDFF;
+}
+a.new{
+	text-decoration:none;
+	color:black;
+}
+ul{
+	list-style:none;
+}
+ul li{
+	display:inline-block;
+	height:200px;
+	background:red;
+	font-size:50px;
+	width:200px;
+	border-radius:100%;
+	margin-right:30px;
+	padding:10px;
+}
+ul li p{
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	color:white;
+	
+}
+#IceCold:hover,#Cold:hover,#Warm:hover,#Hot:hover,#VeryHot:hover{
+	-webkit-animation:rotate 1s ease infinite;
+	animation:rotate 1s ease infinite;
+	cursor:default;
+}
+#IceCold{
+	background:#19FFA2;
+-webkit-animation:pulse 1s ease infinite;
+	animation:pulse 1s ease infinite;
+}
+#Cold{
+	background:#FFA100;
+-webkit-animation:pulse 1s ease infinite;
+	animation:pulse 1s ease infinite;
+	-webkit-animation-delay:1s;
+	
+}
+#Warm{
+	background:#805ECC;
+	-webkit-animation:pulse 1s ease infinite;
+	animation:pulse 1s ease infinite;
+	-webkit-animation-delay:2s;
+	
+}
+#Hot{
+	background:#807099;
+	-webkit-animation:pulse 1s ease infinite;
+	animation:pulse 1s ease infinite;
+	-webkit-animation-delay:3s;
+	
+}
+#VeryHot{
+	background:#B26A44;
+	-webkit-animation:pulse 1s ease infinite;
+	animation:pulse 1s ease infinite;
+	-webkit-animation-delay:4s;
+	
+}
+.Push{
+	opacity:0.2;
+}
+#Title{
+	text-align:center;
+	font-size:35px;
+	color:#B2484C;
+	padding:5px;
+}
+.FeedbackPreview{
+
+	padding:5px;
+	margin-top:15px;
+}
+.Feedbacks{
+	
+	width:1360px;
+	min-width:1280px;
+	margin:200px auto;
+	
+}
+.GameInput{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	min-width:1320px;
+	height:300px;
+	background:#4CADFF;
+}
+
+#GuessANumber{
+	color:white;
+	text-align:center;
+	font-size:30px;
+}
+form{
+	min-width:252px;
+	margin:0 auto;
+	width:252px;
+}
+input[type="text"]{
+	margin-left:20px;
+	height:30px;
+	min-width:200px;
+	width:200px;
+}
+input[type="submit"]{
+	margin-top:10px;
+	margin-left:65px;
+	font-size:20px;
+	border:none;
+	padding:10px;
+	background:-webkit-linear-gradient(#E4FF2E,#9CB200);
+	color:#596600;
+	font-family:Arial, Helvetica, sans-serif;
+	
+}
+input[type="submit"]:hover{
+	color:black;
+}
+#NumberGuesses{
+	margin:20px auto;
+	min-width:252px;
+	width:252px;
+	text-align:center;
+	font-size:30px;
+	color:white;
+}
+.left,.right{
+	min-width:500px;
+	width:500px;
+	height:300px;
+}
+
+.left .Adjust,.right .Adjust{
+	position:absolute;
+	bottom:10px;
+	margin-left:145px;
+	font-size:30px;
+	color:orange;
+}
+.Edit-right{
+	font-size:80px;
+	color:orange;
+	text-align:center;	
+}
+.Edit-left{
+	font-size:50px;
+	color:orange;
+	word-wrap:break-word;
+	text-align:center;
+}
+.left{
+	float:left;
+	
+}
+.right{
+	float:right;
+	
+}
+
+@-webkit-keyframes rotate{
+	from{
+		-webkit-transform:rotate(0deg);
+		transform:rotate(0deg);
+	}
+	to{
+		-webkit-transform:rotate(360deg);
+		transform:rotate(360deg);
+	}
+	
+
+}
+@-webkit-keyframes pulse{
+	from{
+		-webkit-transform:scale(1);
+		transform:scale(1);
+		
+		
+		
+	}
+	to{
+		-webkit-transform:scale(1.1);
+		transform:scale(1.1);
+		
+	}
+	
+	
+}
