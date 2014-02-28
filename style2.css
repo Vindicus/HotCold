@@ -3,8 +3,13 @@ html,body,h1{
 	padding:0;
 	font-size:16px;
 }
-html{
+h2{
+	margin:0;
+	padding-bottom:10px;
+}
+html,body{
 	background:#F4FDFF;
+	height:100%;
 }
 a.new{
 	text-decoration:none;
@@ -15,10 +20,10 @@ ul{
 }
 ul li{
 	display:inline-block;
-	height:200px;
+	height:150px;
 	background:red;
-	font-size:50px;
-	width:200px;
+	font-size:35px;
+	width:150px;
 	border-radius:100%;
 	margin-right:30px;
 	padding:10px;
@@ -76,23 +81,26 @@ ul li p{
 	color:#B2484C;
 	padding:5px;
 }
+.Wrapper{
+	min-height:100%;
+	margin-bottom:-300px;
+}
 .FeedbackPreview{
-
 	padding:5px;
-	margin-top:15px;
+	
 }
 .Feedbacks{
-	
-	width:1360px;
-	min-width:1280px;
-	margin:200px auto;
+	width:1118px;;
+	min-width:1119px;
+	margin:150px auto;
 	
 }
+.FeedbackPreview:after{
+	content:"";
+	display:block;
+	height:300px;
+}
 .GameInput{
-	position:absolute;
-	bottom:0;
-	left:0;
-	right:0;
 	min-width:1320px;
 	height:300px;
 	background:#4CADFF;
@@ -128,13 +136,16 @@ input[type="submit"]{
 input[type="submit"]:hover{
 	color:black;
 }
-#NumberGuesses{
+#NumberGuesses,.UporDown{
 	margin:20px auto;
 	min-width:252px;
 	width:252px;
 	text-align:center;
 	font-size:30px;
 	color:white;
+}
+.UporDown{
+	font-size:20px;
 }
 .left,.right{
 	min-width:500px;
@@ -143,14 +154,12 @@ input[type="submit"]:hover{
 }
 
 .left .Adjust,.right .Adjust{
-	position:absolute;
-	bottom:10px;
 	margin-left:145px;
 	font-size:30px;
 	color:orange;
 }
 .Edit-right{
-	font-size:80px;
+	font-size:50px;
 	color:orange;
 	text-align:center;	
 }
