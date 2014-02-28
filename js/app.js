@@ -18,7 +18,6 @@ var Random=Math.round((Math.random()*99)+1);
 	}
 	function InputProcessed(input){
 		var Difference=Math.abs(Random-input);
-		console.log(Random+" "+Difference);
 		if(Difference==0){
 			$("ul li p").text("You got it");
 			$("ul li").removeClass("Push");
@@ -43,6 +42,13 @@ var Random=Math.round((Math.random()*99)+1);
 			$("#IceCold, #Warm, #Hot, #Cold").addClass("Push");
 			
 	}
+	if(input == Random){
+		$(".UporDown").text("Nice job, You got it!");
+	}else if(input > Random){
+		$(".UporDown").text("I suggest you go down");
+	}else{
+		$(".UporDown").text("I suggest you go up");
+	}
 	}
 	function Guesses(Pushed){
 		PastGuesses.push(Pushed);
@@ -65,6 +71,7 @@ var Random=Math.round((Math.random()*99)+1);
 		$("#Hot p").text("Hot");
 		$("#VeryHot p").text("Very Hot");
 		$("span").text("0");
+		$(".UporDown").text("");
 		
 	}
   	$("input[type='submit']").click(function(e){
