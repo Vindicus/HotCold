@@ -1,49 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Hot Or Cold</title>
-		<link rel="stylesheet" type="text/css" href="style2.css"/>
-		<script src="http://code.jquery.com/jquery.min.js"></script>
-		<script type="text/javascript" src="js/app.js"></script>
-	</head>
-	<body>
-		<div class="Wrapper">
-		<a class="new"href="#">Click here to start a new game</a>
-	<h1 id="Title">HOT or COLD</h1>
-		<div class="FeedbackPreview">
-			<div class="Feedbacks">
-				<ul>
-					<li  class="IceCold" id="IceCold"><p>Ice Cold</p></li>
-					<li  class="Cold" id="Cold"><p>Cold</p></li>
-					<li  class="Warm" id="Warm"><p>Warm</p></li>
-					<li  class="Hot" id="Hot"><p>Hot</p></li>
-					<li  class="VeryHot" id="VeryHot"><p>Very Hot</p></li>
-				</ul>
-			</div>
-		</div>
-		</div>
-<div class="GameInput"> <!-- Guessing Section -->
-			<aside class="left">
-			<p class="Edit-left">0</p>
-			<p class="Adjust">Past Guesses list:</p>
-		</aside>
-<aside class="right">
-	<p class="Edit-right">0</p>
-			<p class="Adjust">Previous Guess:</p>
-</aside>
-			<h2 id="GuessANumber">Guess A Number</h2>
-			<form>
-				<input type="text" name="userGuess" id="userGuess" class="text" maxlength="3" autocomplete="off" placeholder="Enter your Guess" required/>
-      			<input type="submit" id="guessButton" class="button" name="submit" value="Hot or Cold"/>
-			</form>
-			
-      		<p id="NumberGuesses"># of Guesses:<span> 0</span></p>
-      		<p class="UporDown"></p>
-      		
-			
-		
-		</div>
-	</body>
-	
+  <head>
+    <meta charset="UTF-8">
+    <title>Hot Or Cold</title>
+    <link rel="stylesheet" type="text/css" href="style2.css"/>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </head>
+  <body>
+    <div class="Wrapper">
+      <a class="new"href="#">Click here to start a new game</a>
+      <h1 id="Title">HOT or COLD</h1>
+      <div class="FeedbackPreview">
+        <div class="Feedbacks">
+          <ul>
+            <li class="IceCold" id="IceCold"><p>Ice Cold</p></li>
+            <li class="Cold" id="Cold"><p>Cold</p></li>
+            <li class="Warm" id="Warm"><p>Warm</p></li>
+            <li class="Hot" id="Hot"><p>Hot</p></li>
+            <li class="VeryHot" id="VeryHot"><p>Very Hot</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="GameInput"> <!-- Guessing Section -->
+      <aside class="left">
+        <p class="Edit-left">0</p>
+        <p class="Adjust">Past Guesses list:</p>
+      </aside>
+      <aside class="right">
+        <p class="Edit-right">0</p>
+        <p class="Adjust">Previous Guess:</p>
+      </aside>
+      <h2 id="GuessANumber">Guess A Number</h2>
+      <form>
+        <input type="text" name="userGuess" id="userGuess" class="text" maxlength="3" autocomplete="off" placeholder="Enter your Guess" required/>
+        <input type="submit" id="guessButton" class="button" name="submit" value="Hot or Cold"/>
+      </form>
+      <p id="NumberGuesses"># of Guesses:<span> 0</span></p>
+      <p class="UporDown"></p>
+    </div>
+  </body>
 </html>
