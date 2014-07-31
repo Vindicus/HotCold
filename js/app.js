@@ -92,7 +92,7 @@ $(document).ready(function(){
   });
   
   //when clicked, runs the new game function
-  $("a.new").click(function(e){
+  $("button.new").click(function(e){
     e.preventDefault();
     newGame();
   });  	
