@@ -12,9 +12,14 @@ html,body{
   height:100%;
 }
 button.new{
-  width:80px;
-  height:20px;
+  width:96px;
+  height:36px;
   background:orange;
+  border:0;
+  cursor:pointer;
+}
+button.new:hover{
+  background:rgb(60, 255, 83);
 }
 ul{
   list-style:none;
