@@ -13,3 +13,5 @@ The most interesting part was creating the CSS animations for the cold or hot:
 
 1) I created a pulse key frame and have it animate infinitely
 2) The proper css animation will display while the other animations will have a opacity of 0.2 base on the user input
+
+Access game via <a href="http://vindicus.github.io/HotCold/">Hot or Cold</a>
